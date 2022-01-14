@@ -26,7 +26,7 @@ function playRound(playerSelection, computerSelection){
 const button = document.querySelectorAll("button");
 const results = document.querySelector(".results");
 
-// Counter for both side
+// Counter for both sides
 let counterPlayer = 0;
 let counterComputer = 0;
 
@@ -42,7 +42,7 @@ button.forEach((button) => {
             results.textContent = result;
         }
         else {  
-            results.textContent = `|| ${result}  || Player Score: ${counterPlayer}, Computer Score: ${counterComputer}`; 
+            results.textContent = `Player Score: ${counterPlayer}, Computer Score: ${counterComputer}`; 
         }    
     });
 });
